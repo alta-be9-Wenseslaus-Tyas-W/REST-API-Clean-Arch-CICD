@@ -15,7 +15,9 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          port: ${{ secrets.PORT }}
+          # port: ${{ secrets.PORT }}
+          port:
+            default: 22
           script: |
             cd /home/zenseslaus/REST-API-Clean-Arch-CICD
             git pull origin main
