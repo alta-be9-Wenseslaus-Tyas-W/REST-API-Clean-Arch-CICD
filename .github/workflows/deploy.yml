@@ -18,7 +18,7 @@ jobs:
           # port: ${{ secrets.PORT }}
           port: 22
           script: |
-            cd /home/zenseslaus/REST-API-Clean-Arch-CICD
+            cd /home/Wen/REST-API-Clean-Arch-CICD
             git pull origin main
             docker stop be9Container
             docker rm be9Container
